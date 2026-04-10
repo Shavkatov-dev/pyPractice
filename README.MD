@@ -1,10 +1,15 @@
-# PRACTICE PROJECT
+# Practice Project
 
-Learning GIT and Python Foundation
+This repository is for learning and practicing:
 
-# GIT COMMANDS:
+- Git workflow
+- Python fundamentals
 
-```
+---
+
+## 🚀 Git Commands
+
+```bash
 git config --global user.name
 git config --global user.name "your_name"
 git config --global user.email "your_email@example.com"
