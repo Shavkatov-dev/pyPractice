@@ -33,3 +33,19 @@ print(f"the result 4: {result}")
 
 
 print("======= boolean ==========")
+
+# functions > type() input() print() len() str() int() bool()
+
+y = input("Give your value for y:")
+print("y:", y)
+
+result = y.isnumeric()  # stringning faqat raqamlardan tashkil topganligini tekshiradi
+print(f"the input value is numeric: {result}")
+
+# FALSY > 0, 0.0, "", [], {}, set(), None, False
+# TRUTHY > 1, -1, 0.1, " ", [0], {0:0}, set(0), True
+test_falsy = "" or False or None or 0
+print("The Falsy: ", bool(test_falsy))
+
+test_truhty = "MIT" and True and 1
+print("The Truthy: ", bool(test_truhty))
