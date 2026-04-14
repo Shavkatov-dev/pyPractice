@@ -44,3 +44,16 @@ print("the result 3: ", result3)
 
 result4 = give_greet("John")  # default qiymat age=22 ishlaydi
 print("the result 4: ", result4)
+
+
+print('======= Scope ==========')
+
+b = 100  # 3
+
+
+def calculate(a, b):  # 2
+    c = a * b  # 1
+    print(f'the c value: {c}')
+
+
+calculate(5, 50)
