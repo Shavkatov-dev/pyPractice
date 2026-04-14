@@ -30,3 +30,17 @@ print("the result 1: ", result1)
 
 result2 = greeting("Bob")
 print("the result 2: ", result2)
+
+print('======= Keyword and Default Arguments ==========')
+
+
+def give_greet(name, age=22):
+    print("give_greet is executed")
+    return f"Hello, {name}! You are {age} years old."
+
+
+result3 = give_greet(name="Charlie", age=30)
+print("the result 3: ", result3)
+
+result4 = give_greet("John")  # default qiymat age=22 ishlaydi
+print("the result 4: ", result4)
