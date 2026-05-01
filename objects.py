@@ -26,3 +26,22 @@ result1 = math.ceil(97.7)  # CALL
 print(f'result1: {result1}')
 result2 = ceil(98.3)
 print(f'result2: {result2}')
+
+
+print("======= Error handling system =======")
+
+car_dict = dict(name="Toyota", year=2026, electric=True)
+
+try:
+    print("passsed here")
+    a = car_dict.speed
+    result = car_dict["origin"]
+    print("result:", result)
+except KeyError as err:
+    print("No origin state found here:", err)
+except AttributeError as err:
+    print("No speed found here:", err)
+else:  # umuman xatolik bumaganda ishga tushadi
+    print("Executed successfully without errors")
+finally:  # har qanday holatda eng oxirida ishga tushadi
+    print("Final closing logic")
